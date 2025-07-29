@@ -4,6 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,jsx}",
   ],
+  darkMode: 'class', // Habilitar el modo oscuro manual
   theme: {
     extend: {
       colors: {
