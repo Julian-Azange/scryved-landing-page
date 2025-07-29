@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from '../ui/ThemeToggle';
+import LanguageToggle from '../ui/LanguageToggle';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Navbar = () => {
+  const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -24,13 +27,13 @@ const Navbar = () => {
 
   const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-primary/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-4'}`;
 
-  const navItems = [
-    { id: 'nav-home', name: 'Home', href: '#home' },
-    { id: 'nav-services', name: 'Services', href: '#services' },
-    { id: 'nav-about', name: 'About', href: '#about' },
-    { id: 'nav-portfolio', name: 'Portfolio', href: '#portfolio' },
-    { id: 'nav-contact', name: 'Contact', href: '#contact' },
-  ];
+  const navItems = t ? [
+    { id: 'nav-home', name: t.navbar.home, href: '#home' },
+    { id: 'nav-services', name: t.navbar.services, href: '#services' },
+    { id: 'nav-about', name: t.navbar.about, href: '#about' },
+    { id: 'nav-portfolio', name: t.navbar.portfolio, href: '#portfolio' },
+    { id: 'nav-contact', name: t.navbar.contact, href: '#contact' },
+  ] : [];
 
   return (
     <nav className={navbarClasses}>
@@ -66,11 +69,13 @@ const Navbar = () => {
               </a>
             </motion.li>
           ))}
+          <LanguageToggle />
           <ThemeToggle />
         </motion.ul>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden flex items-center space-x-4">
+          <LanguageToggle />
           <ThemeToggle />
           <button 
             onClick={() => setIsOpen(!isOpen)}

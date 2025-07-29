@@ -1,0 +1,17 @@
+{
+    "navbar": {
+        "home": "Home",
+        "services": "Services",
+        "about": "About",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title_line1": "Custom Software Solutions",
+        "title_line2": "for Your",
+        "title_business": "Business",
+        "subtitle": "We build innovative, scalable, and high-performance software solutions tailored to your needs.",
+        "get_started": "Get Started",
+        "learn_more": "Learn More"
+    }
+}

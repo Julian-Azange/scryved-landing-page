@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section 
       id="home" 
@@ -44,8 +46,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <span className="block">Custom Software Solutions</span>
-          <span className="block mt-2">for Your <span className="text-accent">Business</span></span>
+          <span className="block">{t.hero.title_line1}</span>
+          <span className="block mt-2">{t.hero.title_line2} <span className="text-accent">{t.hero.title_business}</span></span>
         </motion.h1>
         
         <motion.p 
@@ -54,7 +56,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
         >
-          We build innovative, scalable, and high-performance software solutions tailored to your needs.
+          {t.hero.subtitle}
         </motion.p>
         
         <motion.div
@@ -64,13 +66,13 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
         >
           <a href="#contact" className="btn-primary">
-            Get Started
+            {t.hero.get_started}
           </a>
           <a 
             href="#services" 
             className="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-md hover:bg-white/10 transition-colors duration-300"
           >
-            Learn More
+            {t.hero.learn_more}
           </a>
         </motion.div>
       </div>

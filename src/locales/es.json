@@ -1,0 +1,17 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "about": "Nosotros",
+        "portfolio": "Portafolio",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title_line1": "Soluciones de Software a Medida",
+        "title_line2": "para Tu",
+        "title_business": "Negocio",
+        "subtitle": "Construimos soluciones de software innovadoras, escalables y de alto rendimiento adaptadas a tus necesidades.",
+        "get_started": "Comenzar",
+        "learn_more": "Saber Más"
+    }
+}
