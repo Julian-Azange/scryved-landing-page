@@ -4,6 +4,8 @@ import ThemeToggle from '../ui/ThemeToggle';
 import LanguageToggle from '../ui/LanguageToggle';
 import { useLanguage } from '../../context/LanguageContext';
 
+import logoLight from '../../assets/images/scryved-logo-light.png';
+
 const Navbar = () => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +46,13 @@ const Navbar = () => {
           transition={{ duration: 0.5 }}
           className="flex items-center"
         >
-          <a href="#home" className="text-2xl font-bold text-white">Scryved</a>
+          <a href="#home">
+            <img 
+              src={logoLight} 
+              alt="Scryved Logo" 
+              className="h-8 w-auto" 
+            />
+          </a>
         </motion.div>
 
         {/* Desktop Menu */}
