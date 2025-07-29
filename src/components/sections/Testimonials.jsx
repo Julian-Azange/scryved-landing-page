@@ -1,45 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Testimonials = () => {
+  const { t } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
   
-  const testimonials = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStart Inc.',
-      image: 'https://randomuser.me/api/portraits/women/1.jpg',
-      content: 'Scryved transformed our business with their custom software solution. Their team was professional, responsive, and delivered beyond our expectations. The new platform has increased our efficiency by 40%.',
-      rating: 5,
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      position: 'CTO, InnovateCorp',
-      image: 'https://randomuser.me/api/portraits/men/2.jpg',
-      content: 'Working with Scryved was a game-changer for our company. Their expertise in mobile app development helped us launch a product that our users love. The attention to detail and quality of work was exceptional.',
-      rating: 5,
-    },
-    {
-      id: 3,
-      name: 'Emily Rodriguez',
-      position: 'Marketing Director, GrowthLabs',
-      image: 'https://randomuser.me/api/portraits/women/3.jpg',
-      content: 'The team at Scryved delivered an outstanding e-commerce platform that has significantly increased our conversion rates. Their understanding of UX/UI design principles and technical implementation was impressive.',
-      rating: 4,
-    },
-    {
-      id: 4,
-      name: 'David Wilson',
-      position: 'Founder, HealthTech Solutions',
-      image: 'https://randomuser.me/api/portraits/men/4.jpg',
-      content: 'Scryved helped us bring our healthcare application to life. Their development process was transparent, and they were always available to address our concerns. The final product exceeded our expectations.',
-      rating: 5,
-    },
-  ];
+  // Usa los testimonios del contexto de idioma, con un array vacío como fallback.
+  const testimonials = t?.testimonials?.items || [];
   
   useEffect(() => {
     if (isInView) {
@@ -55,6 +25,9 @@ const Testimonials = () => {
     setActiveIndex(index);
   };
   
+  // Previene errores si las traducciones aún no han cargado.
+  if (!t) return null;
+
   return (
     <section id="testimonials" ref={sectionRef} className="section-padding bg-gray-50 dark:bg-gray-900 overflow-hidden">
       <div className="container-custom">
@@ -65,10 +38,10 @@ const Testimonials = () => {
           transition={{ duration: 0.7 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Client <span className="text-secondary">Testimonials</span>
+            {t.testimonials.title} <span className="text-secondary">{t.testimonials.title_highlight}</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about working with us.
+            {t.testimonials.subtitle}
           </p>
         </motion.div>
         

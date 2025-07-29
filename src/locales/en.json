@@ -13,5 +13,63 @@
         "subtitle": "We build innovative, scalable, and high-performance software solutions tailored to your needs.",
         "get_started": "Get Started",
         "learn_more": "Learn More"
+  },
+  "services": {
+    "title": "Our",
+    "title_highlight": "Services",
+    "subtitle": "We offer a wide range of services to bring your ideas to life.",
+    "items": [
+      { "title": "Web Development", "description": "Creating modern and responsive websites." },
+      { "title": "Mobile Apps", "description": "Developing native and cross-platform mobile applications." },
+      { "title": "UI/UX Design", "description": "Designing intuitive and attractive user interfaces." }
+    ]
+  },
+  "about": {
+    "title": "About",
+    "title_highlight": "Us",
+    "content": "We are a team of passionate developers and designers dedicated to creating exceptional digital experiences. Our mission is to help businesses grow through technology."
+  },
+  "portfolio": {
+    "title": "Our",
+    "title_highlight": "Portfolio",
+    "subtitle": "Check out some of our latest projects."
+  },
+  "testimonials": {
+    "title": "Client",
+    "title_highlight": "Testimonials",
+    "subtitle": "Don't just take our word for it. Here's what our clients have to say about working with us.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "position": "CEO, TechStart Inc.",
+        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "content": "Scryved transformed our business with their custom software solution. Their team was professional, responsive, and delivered beyond our expectations. The new platform has increased our efficiency by 40%.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "name": "Michael Chen",
+        "position": "CTO, InnovateCorp",
+        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "content": "Working with Scryved was a game-changer for our company. Their expertise in mobile app development helped us launch a product that our users love. The attention to detail and quality of work was exceptional.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in",
+    "title_highlight": "Touch",
+    "subtitle": "Have a project in mind? We'd love to hear from you.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Innovative software solutions to drive your business forward.",
+    "rights": "All rights reserved."
     }
 }

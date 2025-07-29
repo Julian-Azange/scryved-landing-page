@@ -13,5 +13,63 @@
         "subtitle": "Construimos soluciones de software innovadoras, escalables y de alto rendimiento adaptadas a tus necesidades.",
         "get_started": "Comenzar",
         "learn_more": "Saber Más"
+  },
+  "services": {
+    "title": "Nuestros",
+    "title_highlight": "Servicios",
+    "subtitle": "Ofrecemos una amplia gama de servicios para dar vida a tus ideas.",
+    "items": [
+      { "title": "Desarrollo Web", "description": "Creando sitios web modernos y responsivos." },
+      { "title": "Apps Móviles", "description": "Desarrollando aplicaciones móviles nativas y multiplataforma." },
+      { "title": "Diseño UI/UX", "description": "Diseñando interfaces de usuario intuitivas y atractivas." }
+    ]
+  },
+  "about": {
+    "title": "Sobre",
+    "title_highlight": "Nosotros",
+    "content": "Somos un equipo de desarrolladores y diseñadores apasionados dedicados a crear experiencias digitales excepcionales. Nuestra misión es ayudar a las empresas a crecer a través de la tecnología."
+  },
+  "portfolio": {
+    "title": "Nuestro",
+    "title_highlight": "Portafolio",
+    "subtitle": "Echa un vistazo a algunos de nuestros proyectos más recientes."
+  },
+  "testimonials": {
+    "title": "Testimonios de",
+    "title_highlight": "Clientes",
+    "subtitle": "No confíes solo en nuestra palabra. Esto es lo que nuestros clientes dicen sobre trabajar con nosotros.",
+    "items": [
+      {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "position": "CEO, TechStart Inc.",
+        "image": "https://randomuser.me/api/portraits/women/1.jpg",
+        "content": "Scryved transformó nuestro negocio con su solución de software a medida. Su equipo fue profesional, receptivo y superó nuestras expectativas. La nueva plataforma ha aumentado nuestra eficiencia en un 40%.",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "name": "Michael Chen",
+        "position": "CTO, InnovateCorp",
+        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "content": "Trabajar con Scryved fue un punto de inflexión para nuestra empresa. Su experiencia en desarrollo de aplicaciones móviles nos ayudó a lanzar un producto que nuestros usuarios adoran. La atención al detalle y la calidad del trabajo fueron excepcionales.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ponte en",
+    "title_highlight": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Nos encantaría saber de ti.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "description": "Soluciones de software innovadoras para impulsar tu negocio.",
+    "rights": "Todos los derechos reservados."
     }
 }

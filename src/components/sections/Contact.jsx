@@ -51,8 +51,8 @@ const Contact = () => {
         </svg>
       ),
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      content: '+57 (322) 245-5334',
+      link: 'tel:+573222455334',
     },
     {
       id: 'contact-email',
@@ -74,7 +74,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Location',
-      content: '123 Tech Street, Silicon Valley, CA',
+      content: 'Pitalito, Huila, Colombia',
       link: 'https://maps.google.com',
     },
   ];
