@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
   
@@ -67,6 +69,8 @@ const Services = () => {
       description: 'Comprehensive testing and quality assurance services to ensure your software is reliable and bug-free.',
     },
   ];
+
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },

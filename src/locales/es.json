@@ -19,9 +19,18 @@
     "title_highlight": "Servicios",
     "subtitle": "Ofrecemos una amplia gama de servicios para dar vida a tus ideas.",
     "items": [
-      { "title": "Desarrollo Web", "description": "Creando sitios web modernos y responsivos." },
-      { "title": "Apps Móviles", "description": "Desarrollando aplicaciones móviles nativas y multiplataforma." },
-      { "title": "Diseño UI/UX", "description": "Diseñando interfaces de usuario intuitivas y atractivas." }
+      {
+        "title": "Desarrollo Web",
+        "description": "Creando sitios web modernos y responsivos."
+      },
+      {
+        "title": "Apps Móviles",
+        "description": "Desarrollando aplicaciones móviles nativas y multiplataforma."
+      },
+      {
+        "title": "Diseño UI/UX",
+        "description": "Diseñando interfaces de usuario intuitivas y atractivas."
+      }
     ]
   },
   "about": {
@@ -32,7 +41,8 @@
   "portfolio": {
     "title": "Nuestro",
     "title_highlight": "Portafolio",
-    "subtitle": "Echa un vistazo a algunos de nuestros proyectos más recientes."
+    "subtitle": "Echa un vistazo a algunos de nuestros proyectos más recientes.",
+    "placeholder": "Nuestros proyectos se mostrarán aquí pronto. ¡Mantente atento!"
   },
   "testimonials": {
     "title": "Testimonios de",
@@ -71,5 +81,5 @@
   "footer": {
     "description": "Soluciones de software innovadoras para impulsar tu negocio.",
     "rights": "Todos los derechos reservados."
-    }
+  }
 }
