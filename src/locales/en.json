@@ -54,9 +54,51 @@
     "stats_client_satisfaction": "Client Satisfaction"
   },
   "portfolio": {
-    "title": "Our",
-    "title_highlight": "Portfolio",
-    "subtitle": "Check out some of our latest projects."
+    "title_part1": "Our",
+    "title_part2": "Portfolio",
+    "description": "Explore our recent projects and see how we've helped businesses achieve their goals.",
+    "categories": {
+      "all": "All Projects",
+      "web": "Web Development",
+      "mobile": "Mobile Apps",
+      "ui": "UI/UX Design"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "E-Commerce Platform",
+        "description": "A full-featured e-commerce platform with product management, cart functionality, payment processing, and order tracking."
+      },
+      {
+        "id": 2,
+        "title": "Health & Fitness App",
+        "description": "A mobile application for tracking workouts, nutrition, and health metrics with personalized recommendations."
+      },
+      {
+        "id": 3,
+        "title": "Financial Dashboard",
+        "description": "An interactive dashboard for financial analysis with real-time data visualization and reporting features."
+      },
+      {
+        "id": 4,
+        "title": "Social Media App UI",
+        "description": "A modern and intuitive user interface design for a social media application with a focus on user experience."
+      },
+      {
+        "id": 5,
+        "title": "Real Estate Platform",
+        "description": "A comprehensive real estate platform with property listings, search functionality, and virtual tours."
+      },
+      {
+        "id": 6,
+        "title": "Food Delivery App",
+        "description": "A mobile application for ordering food from local restaurants with real-time order tracking and delivery status."
+      }
+    ],
+    "modal": {
+      "technologies_used": "Technologies Used",
+      "view_project": "View Project"
+    }
   },
   "testimonials": {
     "title": "Client",
@@ -82,18 +124,57 @@
     ]
   },
   "contact": {
-    "title": "Get in",
-    "title_highlight": "Touch",
-    "subtitle": "Have a project in mind? We'd love to hear from you.",
+    "title_part1": "Get in",
+    "title_part2": "Touch",
+    "description": "Have a project in mind or want to learn more about our services? We'd love to hear from you!",
     "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "submit": "Send Message"
-    }
+      "send_message_title": "Send us a Message",
+      "status_success": "Thank you for your message! We will get back to you soon.",
+      "status_error": "There was an error sending your message. Please try again later.",
+      "label_name": "Your Name",
+      "label_email": "Your Email",
+      "label_phone": "Phone Number",
+      "label_subject": "Subject",
+      "label_message": "Your Message",
+      "button_send": "Send Message"
+    },
+    "info_title": "Contact Information",
+    "info_items": [
+      {
+        "id": "contact-phone",
+        "title": "Phone"
+      },
+      {
+        "id": "contact-email",
+        "title": "Email"
+      },
+      {
+        "id": "contact-location",
+        "title": "Location"
+      }
+    ],
+    "follow_us_title": "Follow Us"
   },
   "footer": {
-    "description": "Innovative software solutions to drive your business forward.",
-    "rights": "All rights reserved."
-    }
+    "description": "Custom software development solutions for businesses of all sizes.",
+    "services_title": "Services",
+    "company_title": "Company",
+    "contact_title": "Contact",
+    "links": {
+      "web_development": "Web Development",
+      "mobile_apps": "Mobile Apps",
+      "ui_ux_design": "UI/UX Design",
+      "cloud_solutions": "Cloud Solutions",
+      "devops": "DevOps",
+      "about_us": "About Us",
+      "careers": "Careers",
+      "blog": "Blog",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms of Service"
+    },
+    "address": "123 Tech Street, Silicon Valley, CA",
+    "email": "contact@scryved.com",
+    "phone": "+1 (555) 123-4567",
+    "copyright": "All rights reserved."
+  }
 }

@@ -54,10 +54,51 @@
     "stats_client_satisfaction": "Satisfacción del Cliente"
   },
   "portfolio": {
-    "title": "Nuestro",
-    "title_highlight": "Portafolio",
-    "subtitle": "Echa un vistazo a algunos de nuestros proyectos más recientes.",
-    "placeholder": "Nuestros proyectos se mostrarán aquí pronto. ¡Mantente atento!"
+    "title_part1": "Nuestro",
+    "title_part2": "Portafolio",
+    "description": "Explore nuestros proyectos recientes y vea cómo hemos ayudado a empresas a alcanzar sus metas.",
+    "categories": {
+      "all": "Todos los Proyectos",
+      "web": "Desarrollo Web",
+      "mobile": "Aplicaciones Móviles",
+      "ui": "Diseño UI/UX"
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Plataforma de Comercio Electrónico",
+        "description": "Una plataforma de comercio electrónico con todas las funciones para gestión de productos, funcionalidad de carrito, procesamiento de pagos y seguimiento de pedidos."
+      },
+      {
+        "id": 2,
+        "title": "Aplicación de Salud y Fitness",
+        "description": "Una aplicación móvil para el seguimiento de entrenamientos, nutrición y métricas de salud con recomendaciones personalizadas."
+      },
+      {
+        "id": 3,
+        "title": "Panel Financiero",
+        "description": "Un panel interactivo para análisis financiero con visualización de datos en tiempo real y funciones de informes."
+      },
+      {
+        "id": 4,
+        "title": "UI de Aplicación de Red Social",
+        "description": "Un diseño de interfaz de usuario moderno e intuitivo para una aplicación de redes sociales, centrado en la experiencia del usuario."
+      },
+      {
+        "id": 5,
+        "title": "Plataforma Inmobiliaria",
+        "description": "Una plataforma inmobiliaria completa con listados de propiedades, funcionalidad de búsqueda y recorridos virtuales."
+      },
+      {
+        "id": 6,
+        "title": "Aplicación de Entrega de Comida",
+        "description": "Una aplicación móvil para pedir comida de restaurantes locales con seguimiento de pedidos y estado de entrega en tiempo real."
+      }
+    ],
+    "modal": {
+      "technologies_used": "Tecnologías Utilizadas",
+      "view_project": "Ver Proyecto"
+    }
   },
   "testimonials": {
     "title": "Testimonios de",
@@ -83,18 +124,57 @@
     ]
   },
   "contact": {
-    "title": "Ponte en",
-    "title_highlight": "Contacto",
-    "subtitle": "¿Tienes un proyecto en mente? Nos encantaría saber de ti.",
+    "title_part1": "Ponte en",
+    "title_part2": "Contacto",
+    "description": "¿Tienes un proyecto en mente o quieres saber más sobre nuestros servicios? ¡Nos encantaría escucharte!",
     "form": {
-      "name": "Nombre",
-      "email": "Correo Electrónico",
-      "message": "Mensaje",
-      "submit": "Enviar Mensaje"
-    }
+      "send_message_title": "Envíanos un Mensaje",
+      "status_success": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.",
+      "status_error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.",
+      "label_name": "Tu Nombre",
+      "label_email": "Tu Correo Electrónico",
+      "label_phone": "Número de Teléfono",
+      "label_subject": "Asunto",
+      "label_message": "Tu Mensaje",
+      "button_send": "Enviar Mensaje"
+    },
+    "info_title": "Información de Contacto",
+    "info_items": [
+      {
+        "id": "contact-phone",
+        "title": "Teléfono"
+      },
+      {
+        "id": "contact-email",
+        "title": "Correo Electrónico"
+      },
+      {
+        "id": "contact-location",
+        "title": "Ubicación"
+      }
+    ],
+    "follow_us_title": "Síguenos"
   },
   "footer": {
-    "description": "Soluciones de software innovadoras para impulsar tu negocio.",
-    "rights": "Todos los derechos reservados."
+    "description": "Soluciones de desarrollo de software a medida para empresas de todos los tamaños.",
+    "services_title": "Servicios",
+    "company_title": "Empresa",
+    "contact_title": "Contacto",
+    "links": {
+      "web_development": "Desarrollo Web",
+      "mobile_apps": "Aplicaciones Móviles",
+      "ui_ux_design": "Diseño UI/UX",
+      "cloud_solutions": "Soluciones en la Nube",
+      "devops": "DevOps",
+      "about_us": "Sobre Nosotros",
+      "careers": "Carreras",
+      "blog": "Blog",
+      "privacy_policy": "Política de Privacidad",
+      "terms_of_service": "Términos de Servicio"
+    },
+    "address": "123 Calle Tech, Silicon Valley, CA",
+    "email": "contact@scryved.com",
+    "phone": "+1 (555) 123-4567",
+    "copyright": "Todos los derechos reservados."
   }
 }
