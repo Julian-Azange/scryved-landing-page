@@ -14,29 +14,44 @@
         "get_started": "Comenzar",
         "learn_more": "Saber Más"
   },
-  "services": {
-    "title": "Nuestros",
-    "title_highlight": "Servicios",
-    "subtitle": "Ofrecemos una amplia gama de servicios para dar vida a tus ideas.",
-    "items": [
-      {
-        "title": "Desarrollo Web",
-        "description": "Creando sitios web modernos y responsivos."
-      },
-      {
-        "title": "Apps Móviles",
-        "description": "Desarrollando aplicaciones móviles nativas y multiplataforma."
-      },
-      {
-        "title": "Diseño UI/UX",
-        "description": "Diseñando interfaces de usuario intuitivas y atractivas."
-      }
-    ]
-  },
+  "services_title_part1": "Nuestros",
+  "services_title_part2": "Servicios",
+  "services_description": "Ofrecemos una gama completa de servicios de desarrollo de software para ayudar a su negocio a prosperar en el mundo digital.",
+  "service_web_development_title": "Desarrollo Web",
+  "service_web_development_description": "Creamos aplicaciones web responsivas, rápidas y escalables utilizando tecnologías modernas como React, Vue y Angular.",
+  "service_mobile_app_development_title": "Desarrollo de Aplicaciones Móviles",
+  "service_mobile_app_development_description": "Aplicaciones móviles nativas y multiplataforma para iOS y Android usando React Native, Flutter y Swift.",
+  "service_ui_ux_design_title": "Diseño UI/UX",
+  "service_ui_ux_design_description": "Soluciones de diseño centradas en el usuario que mejoran la experiencia y fomentan la interacción con sus productos digitales.",
+  "service_custom_software_development_title": "Desarrollo de Software a Medida",
+  "service_custom_software_development_description": "Soluciones de software personalizadas diseñadas para abordar los desafíos y requisitos específicos de su negocio.",
+  "service_devops_cloud_solutions_title": "DevOps y Soluciones en la Nube",
+  "service_devops_cloud_solutions_description": "Optimice su desarrollo y operaciones con nuestros servicios DevOps y soluciones de infraestructura en la nube.",
+  "service_quality_assurance_title": "Control de Calidad",
+  "service_quality_assurance_description": "Servicios integrales de pruebas y control de calidad para asegurar que su software sea confiable y libre de errores.",
   "about": {
-    "title": "Sobre",
-    "title_highlight": "Nosotros",
-    "content": "Somos un equipo de desarrolladores y diseñadores apasionados dedicados a crear experiencias digitales excepcionales. Nuestra misión es ayudar a las empresas a crecer a través de la tecnología."
+    "title_part1": "Sobre",
+    "title_part2": "Scryved",
+    "description_paragraph1": "Fundada en 2013, Scryved ha estado a la vanguardia del desarrollo de software a medida, ofreciendo soluciones innovadoras a empresas de diversas industrias. Nuestra misión es transformar sus ideas en aplicaciones de software potentes, escalables y fáciles de usar.",
+    "description_paragraph2": "Nos enorgullecemos de nuestra experiencia técnica, resolución creativa de problemas y compromiso de ofrecer software de alta calidad que supere las expectativas de nuestros clientes. Nuestro equipo de desarrolladores, diseñadores y gerentes de proyectos experimentados trabaja en colaboración para garantizar el éxito de su proyecto.",
+    "features_title": "¿Por qué Elegirnos?",
+    "feature_innovative_solutions": "Soluciones Innovadoras",
+    "feature_cutting_edge_technology": "Tecnología de Vanguardia",
+    "feature_agile_development": "Desarrollo Ágil",
+    "feature_client_focused_approach": "Enfoque Centrado en el Cliente",
+    "reason_technical_excellence_title": "Excelencia Técnica",
+    "reason_technical_excellence_description": "Nuestro equipo está compuesto por desarrolladores de primer nivel con experiencia en las últimas tecnologías.",
+    "reason_tailored_solutions_title": "Soluciones Personalizadas",
+    "reason_tailored_solutions_description": "Creamos software a medida que se alinea perfectamente con sus objetivos y requisitos comerciales.",
+    "reason_transparent_process_title": "Proceso Transparente",
+    "reason_transparent_process_description": "Mantenemos una comunicación clara y lo mantenemos involucrado durante todo el proceso de desarrollo.",
+    "reason_long_term_support_title": "Soporte a Largo Plazo",
+    "reason_long_term_support_description": "Nuestra relación no termina con la implementación; brindamos mantenimiento y soporte continuos.",
+    "get_in_touch_button": "Contáctanos",
+    "stats_years_experience": "Años de Experiencia",
+    "stats_projects_completed": "Proyectos Completados",
+    "stats_team_members": "Miembros del Equipo",
+    "stats_client_satisfaction": "Satisfacción del Cliente"
   },
   "portfolio": {
     "title": "Nuestro",
