@@ -59,17 +59,17 @@ const Hero = () => {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row justify-center gap-4"
+          className="flex flex-row flex-wrap justify-center items-center gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
         >
-          <a href="#contact" className="btn-primary transition-shadow duration-300 shadow-[0_0_3px_theme(colors.accent),0_0_20px_theme(colors.accent)] hover:shadow-[0_0_2px_theme(colors.accent),0_0_3px_theme(colors.accent)]">
+          <a href="#contact" className="btn-primary text-sm sm:text-base py-2 px-4 sm:py-3 sm:px-5 transition-shadow duration-300 shadow-[0_0_3px_theme(colors.accent),0_0_20px_theme(colors.accent)] hover:shadow-[0_0_2px_theme(colors.accent),0_0_3px_theme(colors.accent)]">
             {t.hero.get_started}
           </a>
           <a
             href="#services"
-            className="bg-transparent border-2 border-white text-white font-semibold py-2 px-4 rounded-md hover:bg-white/10 transition-all duration-300 [text-shadow:0_0_5px_#fff] shadow-[0_0_8px_#fff,inset_0_0_8px_#fff] hover:shadow-[0_0_15px_#fff,inset_0_0_10px_#fff]"
+            className="bg-transparent border-2 border-white text-white font-semibold text-sm sm:text-base py-2 px-4 rounded-md hover:bg-white/10 transition-all duration-300 [text-shadow:0_0_5px_#fff] shadow-[0_0_8px_#fff,inset_0_0_8px_#fff] hover:shadow-[0_0_15px_#fff,inset_0_0_10px_#fff]"
           >
             {t.hero.learn_more}
           </a>
