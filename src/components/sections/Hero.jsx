@@ -21,8 +21,8 @@ const Hero = () => {
       minHeight: 200.00,
       minWidth: 200.00,
       scale: 1.00,
-      color1: 0x6969,
-      color2: 0xa4f235,
+      color1: 0x707,
+      color2: 0x3e7000,
       size: 2.00
     });
 
@@ -46,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <span className="block">{t.hero.title_line1}</span>
-          <span className="block mt-2">{t.hero.title_line2} <span className="text-black [text-shadow:0_0_4px_currentColor,0_0_5px_currentColor]">{t.hero.title_business}</span></span>
+          <span className="block mt-2">{t.hero.title_line2} <span className="text-accent [text-shadow:0_0_4px_currentColor,0_0_5px_currentColor]">{t.hero.title_business}</span></span>
         </motion.h1>
 
         <motion.p
