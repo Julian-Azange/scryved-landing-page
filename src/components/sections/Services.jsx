@@ -94,7 +94,7 @@ const Services = () => {
   };
 
   return (
-    <section id="services" ref={sectionRef} className="section-padding bg-gray-50 dark:bg-gray-900">
+    <section id="services" ref={sectionRef} className="section-padding bg-white dark:bg-primary">
       <div className="container-custom">
         <motion.div
           className="text-center mb-16"
@@ -119,7 +119,7 @@ const Services = () => {
           {servicesData.map((service) => (
             <motion.div
               key={service.id}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center"
+              className="bg-white dark:bg-zinc-950 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center"
               variants={itemVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >

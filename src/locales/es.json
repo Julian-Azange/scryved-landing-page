@@ -1,18 +1,18 @@
 {
-    "navbar": {
-        "home": "Inicio",
-        "services": "Servicios",
-        "about": "Nosotros",
-        "portfolio": "Portafolio",
-        "contact": "Contacto"
-    },
-    "hero": {
-        "title_line1": "Soluciones de Software a Medida",
-        "title_line2": "para Tu",
-        "title_business": "Negocio",
-        "subtitle": "Construimos soluciones de software innovadoras, escalables y de alto rendimiento adaptadas a tus necesidades.",
-        "get_started": "Comenzar",
-        "learn_more": "Saber Más"
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title_line1": "Soluciones de Software a Medida",
+    "title_line2": "para Tu",
+    "title_business": "Negocio",
+    "subtitle": "Construimos soluciones de software innovadoras, escalables y de alto rendimiento adaptadas a tus necesidades.",
+    "get_started": "Comenzar",
+    "learn_more": "Saber Más"
   },
   "services_title_part1": "Nuestros",
   "services_title_part2": "Servicios",
@@ -32,7 +32,7 @@
   "about": {
     "title_part1": "Sobre",
     "title_part2": "Scryved",
-    "description_paragraph1": "Fundada en 2013, Scryved ha estado a la vanguardia del desarrollo de software a medida, ofreciendo soluciones innovadoras a empresas de diversas industrias. Nuestra misión es transformar sus ideas en aplicaciones de software potentes, escalables y fáciles de usar.",
+    "description_paragraph1": "Fundada en 2023, Scryved ha estado a la vanguardia del desarrollo de software a medida, ofreciendo soluciones innovadoras a empresas de diversas industrias. Nuestra misión es transformar sus ideas en aplicaciones de software potentes, escalables y fáciles de usar.",
     "description_paragraph2": "Nos enorgullecemos de nuestra experiencia técnica, resolución creativa de problemas y compromiso de ofrecer software de alta calidad que supere las expectativas de nuestros clientes. Nuestro equipo de desarrolladores, diseñadores y gerentes de proyectos experimentados trabaja en colaboración para garantizar el éxito de su proyecto.",
     "features_title": "¿Por qué Elegirnos?",
     "feature_innovative_solutions": "Soluciones Innovadoras",
@@ -172,9 +172,9 @@
       "privacy_policy": "Política de Privacidad",
       "terms_of_service": "Términos de Servicio"
     },
-    "address": "123 Calle Tech, Silicon Valley, CA",
-    "email": "contact@scryved.com",
-    "phone": "+1 (555) 123-4567",
+    "address": "Pitalito, Huila, Colombia",
+    "email": "scryved@gmail.com",
+    "phone": "+57 (57) 322 245 5334",
     "copyright": "Todos los derechos reservados."
   }
 }

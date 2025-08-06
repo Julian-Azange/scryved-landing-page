@@ -29,7 +29,7 @@ const Testimonials = () => {
   if (!t) return null;
 
   return (
-    <section id="testimonials" ref={sectionRef} className="section-padding bg-gray-50 dark:bg-gray-900 overflow-hidden">
+    <section id="testimonials" ref={sectionRef} className="section-padding bg-white dark:bg-primary overflow-hidden">
       <div className="container-custom">
         <motion.div 
           className="text-center mb-16"

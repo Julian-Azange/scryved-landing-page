@@ -15,10 +15,12 @@ module.exports = {
         secondary: '#a3e635',       // Verde lima vibrante (reemplaza al amarillo)
         'secondary-dark': '#84cc16',   // Verde lima más oscuro para hover
         accent: '#7bcb3b',           // Tu verde principal
-        'accent-dark': '#68a932',    // Verde principal más oscuro para hover
+        'accent-dark': '#68a932',   // Verde principal más oscuro para hover
+        devil: '#0c0d0c',           // Tu devil principal
+        'devil-dark': '#0c0d0c',   // devil principal más oscuro para hover
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
       },
     },
   },

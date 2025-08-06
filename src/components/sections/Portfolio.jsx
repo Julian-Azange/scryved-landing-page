@@ -76,7 +76,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" ref={sectionRef} className="section-padding bg-gray-50 dark:bg-gray-900">
+    <section id="portfolio" ref={sectionRef} className="section-padding bg-white dark:bg-primary">
       <div className="container-custom">
         <motion.div
           className="text-center mb-12"

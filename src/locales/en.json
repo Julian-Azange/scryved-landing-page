@@ -1,18 +1,18 @@
 {
-    "navbar": {
-        "home": "Home",
-        "services": "Services",
-        "about": "About",
-        "portfolio": "Portfolio",
-        "contact": "Contact"
-    },
-    "hero": {
-        "title_line1": "Custom Software Solutions",
-        "title_line2": "for Your",
-        "title_business": "Business",
-        "subtitle": "We build innovative, scalable, and high-performance software solutions tailored to your needs.",
-        "get_started": "Get Started",
-        "learn_more": "Learn More"
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title_line1": "Custom Software Solutions",
+    "title_line2": "for Your",
+    "title_business": "Business",
+    "subtitle": "We build innovative, scalable, and high-performance software solutions tailored to your needs.",
+    "get_started": "Get Started",
+    "learn_more": "Learn More"
   },
   "services_title_part1": "Our",
   "services_title_part2": "Services",
@@ -32,7 +32,7 @@
   "about": {
     "title_part1": "About",
     "title_part2": "Scryved",
-    "description_paragraph1": "Founded in 2013, Scryved has been at the forefront of custom software development, delivering innovative solutions to businesses across various industries. Our mission is to transform your ideas into powerful, scalable, and user-friendly software applications.",
+    "description_paragraph1": "Founded in 2023, Scryved has been at the forefront of custom software development, delivering innovative solutions to businesses across various industries. Our mission is to transform your ideas into powerful, scalable, and user-friendly software applications.",
     "description_paragraph2": "We pride ourselves on our technical expertise, creative problem-solving, and commitment to delivering high-quality software that exceeds our clients' expectations. Our team of experienced developers, designers, and project managers work collaboratively to ensure your project's success.",
     "features_title": "Why Choose Us?",
     "feature_innovative_solutions": "Innovative Solutions",
@@ -172,9 +172,9 @@
       "privacy_policy": "Privacy Policy",
       "terms_of_service": "Terms of Service"
     },
-    "address": "123 Tech Street, Silicon Valley, CA",
-    "email": "contact@scryved.com",
-    "phone": "+1 (555) 123-4567",
+    "address": "Pitalito, Huila, Colombia",
+    "email": "scryved@gmail.com",
+    "phone": "+57 (57) 322 245 5334",
     "copyright": "All rights reserved."
   }
 }
