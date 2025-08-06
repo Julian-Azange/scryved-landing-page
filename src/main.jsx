@@ -9,6 +9,7 @@ import { ThemeProvider } from './context/ThemeContext'
 // en App.css puedan sobreescribirlo si es necesario.
 import './index.css'
 import './App.css'
+import './assets/styles/loader.css' // Importa los estilos del loader
 
 import App from './App.jsx'
 
