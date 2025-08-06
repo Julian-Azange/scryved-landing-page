@@ -46,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <span className="block">{t.hero.title_line1}</span>
-          <span className="block mt-2">{t.hero.title_line2} <span className="text-accent [text-shadow:0_0_4px_currentColor,0_0_5px_currentColor]">{t.hero.title_business}</span></span>
+          <span className="block mt-2">{t.hero.title_line2} <span className="text-accent">{t.hero.title_business}</span></span>
         </motion.h1>
 
         <motion.p
@@ -64,7 +64,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
         >
-          <a href="#contact" className="btn-primary transition-shadow duration-300 shadow-[0_0_8px_theme(colors.accent),0_0_20px_theme(colors.accent)] hover:shadow-[0_0_12px_theme(colors.accent),0_0_30px_theme(colors.accent)]">
+          <a href="#contact" className="btn-primary transition-shadow duration-300 shadow-[0_0_3px_theme(colors.accent),0_0_20px_theme(colors.accent)] hover:shadow-[0_0_2px_theme(colors.accent),0_0_3px_theme(colors.accent)]">
             {t.hero.get_started}
           </a>
           <a

@@ -1,18 +1,23 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
+import ColombiaFlag from '../icons/ColombiaFlag';
+import UsaFlag from '../icons/UsaFlag';
 
 const LanguageToggle = () => {
   const { language, toggleLanguage } = useLanguage();
 
+  const isEnglish = language === 'en';
+
   return (
     <motion.button
       onClick={toggleLanguage}
-      className="p-2 rounded-full text-white hover:bg-white/20 transition-colors duration-300 focus:outline-none focus-ring font-semibold w-10 h-10 flex items-center justify-center"
+      className="flex items-center space-x-2 text-white hover:text-accent transition-colors duration-300"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      aria-label="Toggle language"
+      aria-label="Change language"
     >
-      {language === 'en' ? 'ES' : 'EN'}
+      {isEnglish ? <UsaFlag className="w-6 h-auto rounded-sm" /> : <ColombiaFlag className="w-6 h-auto rounded-sm" />}
+      <span className="font-semibold uppercase">{isEnglish ? 'en' : 'es'}</span>
     </motion.button>
   );
 };
