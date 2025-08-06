@@ -20,9 +20,9 @@ const Hero = () => {
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      scale: 1.00,
+      scale: 3.00,
       color1: 0x707,
-      color2: 0x3e7000,
+      color2: 0x508c07,
       size: 2.00
     });
 
