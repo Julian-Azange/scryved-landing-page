@@ -1,64 +1,42 @@
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../context/LanguageContext';
 
+import * as THREE from 'three';
+import CELLS from 'vanta/dist/vanta.cells.min';
+
 const Hero = () => {
   const { t } = useLanguage();
+  const vantaRef = useRef(null);
 
-  const animatedSmokeElements = [
-    { id: 1, width: 350, height: 200, top: '10%', left: '100%', opacity: 0.08, duration: 25, delay: 0 },
-    { id: 2, width: 450, height: 250, top: '60%', left: '110%', opacity: 0.06, duration: 30, delay: 5 },
-    { id: 3, width: 300, height: 180, top: '30%', left: '105%', opacity: 0.09, duration: 27, delay: 2 },
-    { id: 4, width: 500, height: 280, top: '80%', left: '120%', opacity: 0.07, duration: 32, delay: 8 },
-    { id: 5, width: 400, height: 220, top: '20%', left: '115%', opacity: 0.05, duration: 28, delay: 3.5 },
-    { id: 6, width: 250, height: 150, top: '50%', left: '100%', opacity: 0.1, duration: 20, delay: 10 },
-    { id: 7, width: 550, height: 300, top: '5%', left: '125%', opacity: 0.07, duration: 35, delay: 6.5 },
-  ];
+  useEffect(() => {
+    let vantaEffect = null;
+    // Llama a la función de VANTA, pasándole THREE
+    vantaEffect = CELLS({
+      el: vantaRef.current,
+      THREE: THREE,
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      color1: 0x6969,
+      color2: 0xa4f235,
+      size: 2.00
+    });
+
+    return () => {
+      if (vantaEffect) vantaEffect.destroy();
+    };
+  }, []);
 
   return (
     <section
       id="home"
+      ref={vantaRef}
       className="relative min-h-screen flex items-center justify-center bg-white dark:bg-primary  overflow-hidden"
     >
-      {/* Background gradient overlay, will be mostly covered by animated elements */}
-      {/* Puedes ajustar 'to-black' si quieres un fondo más oscuro que tu 'primary' */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-black z-0"></div>
-
-      {/* Animated background elements (smoke effect) */}
-      <div className="absolute inset-0 z-0">
-        {animatedSmokeElements.map((el) => (
-          <motion.div
-            key={`smoke-element-${el.id}`}
-            className="absolute rounded-full filter blur-3xl" // Mantiene el desenfoque para el efecto de humo
-            style={{
-              width: `${el.width}px`,
-              height: `${el.height}px`,
-              top: el.top,
-              left: el.left, // Posición inicial fuera de la pantalla a la derecha
-              opacity: el.opacity,
-              // Usamos un gradiente radial de blanco a transparente para el efecto de humo
-              // Ajusta la opacidad del rgba para hacer el humo más o menos denso
-              background: `radial-gradient(circle, rgba(255, 255, 255, 255) 0%, rgba(255, 255, 255, 255) 70%)`
-            }}
-            animate={{
-              // Animar 'x' para mover de derecha a izquierda
-              // Empieza en 0 (su 'left' inicial), va a -1500px (o más si tu pantalla es muy ancha)
-              // y luego regresa a 0 para que Framer Motion reinicie la animación
-              x: [0, -1500, 0], // Ajusta -1500px según el ancho de tu contenido y cuánto quieres que se desplace
-              y: [0, Math.random() * 50 - 25, 0], // Ligero movimiento vertical aleatorio
-              scale: [1, 1.05, 1], // Ligera pulsación de escala para darle más vida
-              opacity: [el.opacity, el.opacity * 1.5, el.opacity], // Ligera pulsación de opacidad
-            }}
-            transition={{
-              repeat: Infinity,
-              repeatType: 'loop', // Usamos 'loop' para que siempre reinicie el movimiento desde la derecha
-              duration: el.duration, // Duración para cruzar la pantalla
-              ease: 'linear', // 'linear' para un movimiento constante, o 'easeInOut' para uno más suave
-              delay: el.delay
-            }}
-          />
-        ))}
-      </div>
-
       {/* Contenido principal del hero */}
       <div className="container-custom relative z-10 text-center px-4 sm:px-6 lg:px-8">
         <motion.h1
@@ -68,7 +46,7 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <span className="block">{t.hero.title_line1}</span>
-          <span className="block mt-2">{t.hero.title_line2} <span className="text-accent [text-shadow:0_0_4px_currentColor,0_0_10px_currentColor]">{t.hero.title_business}</span></span>
+          <span className="block mt-2">{t.hero.title_line2} <span className="text-black [text-shadow:0_0_4px_currentColor,0_0_5px_currentColor]">{t.hero.title_business}</span></span>
         </motion.h1>
 
         <motion.p
