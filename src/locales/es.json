@@ -58,41 +58,67 @@
     "title_part2": "Portafolio",
     "description": "Explore nuestros proyectos recientes y vea cómo hemos ayudado a empresas a alcanzar sus metas.",
     "categories": {
-      "all": "Todos los Proyectos",
+      "all": "Todos los Servicios",
       "web": "Desarrollo Web",
       "mobile": "Aplicaciones Móviles",
-      "ui": "Diseño UI/UX"
+      "ui": "Diseño UI/UX",
+      "ia": "Automatización, ChatBots e IA"
     },
     "projects": [
       {
         "id": 1,
         "title": "Plataforma de Comercio Electrónico",
-        "description": "Una plataforma de comercio electrónico con todas las funciones para gestión de productos, funcionalidad de carrito, procesamiento de pagos y seguimiento de pedidos."
+        "description": "Desarrollo de un e-commerce robusto con gestión avanzada de productos, carrito inteligente, pasarela de pagos segura y seguimiento en tiempo real de pedidos."
       },
       {
         "id": 2,
         "title": "Aplicación de Salud y Fitness",
-        "description": "Una aplicación móvil para el seguimiento de entrenamientos, nutrición y métricas de salud con recomendaciones personalizadas."
+        "description": "App móvil con seguimiento de rutinas, nutrición y métricas de salud, incluyendo recomendaciones personalizadas mediante algoritmos de IA."
       },
       {
         "id": 3,
-        "title": "Panel Financiero",
-        "description": "Un panel interactivo para análisis financiero con visualización de datos en tiempo real y funciones de informes."
+        "title": "Panel Financiero Interactivo",
+        "description": "Dashboard dinámico para análisis financiero con gráficas en tiempo real, reportes automatizados y alertas inteligentes."
       },
       {
         "id": 4,
-        "title": "UI de Aplicación de Red Social",
-        "description": "Un diseño de interfaz de usuario moderno e intuitivo para una aplicación de redes sociales, centrado en la experiencia del usuario."
+        "title": "UI para Red Social",
+        "description": "Diseño de interfaz centrada en la experiencia del usuario para una red social, con prototipado, flujo intuitivo y modo oscuro."
       },
       {
         "id": 5,
-        "title": "Plataforma Inmobiliaria",
-        "description": "Una plataforma inmobiliaria completa con listados de propiedades, funcionalidad de búsqueda y recorridos virtuales."
+        "title": "Plataforma Inmobiliaria Inteligente",
+        "description": "Portal inmobiliario con búsqueda avanzada, recorridos virtuales y motor de recomendaciones basado en IA."
       },
       {
         "id": 6,
         "title": "Aplicación de Entrega de Comida",
-        "description": "Una aplicación móvil para pedir comida de restaurantes locales con seguimiento de pedidos y estado de entrega en tiempo real."
+        "description": "App para pedidos de comida con integración de geolocalización, pagos en línea y seguimiento en tiempo real del repartidor."
+      },
+      {
+        "id": 7,
+        "title": "Chatbot para Atención al Cliente",
+        "description": "Desarrollo de un asistente virtual integrado con WhatsApp y web, capaz de responder preguntas frecuentes, procesar pedidos y automatizar consultas 24/7."
+      },
+      {
+        "id": 8,
+        "title": "Sistema de Automatización Empresarial (RPA)",
+        "description": "Implementación de flujos automatizados para la gestión de facturas, reportes y procesos internos, reduciendo tiempos y costos operativos."
+      },
+      {
+        "id": 10,
+        "title": "Plataforma de Gestión Académica",
+        "description": "Sistema para instituciones educativas con módulos de matrículas, calificaciones, asistencia y notificaciones en tiempo real."
+      },
+      {
+        "id": 11,
+        "title": "Sistema de Reservas para Restaurantes",
+        "description": "Aplicación web y móvil para reservas en restaurantes, gestión de disponibilidad y confirmaciones automáticas vía WhatsApp."
+      },
+      {
+        "id": 12,
+        "title": "Integración de Pasarelas de Pago",
+        "description": "Implementación de integraciones con PSE, PayU, Stripe y PayPal en aplicaciones web y móviles para pagos seguros y rápidos."
       }
     ],
     "modal": {

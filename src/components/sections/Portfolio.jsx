@@ -15,45 +15,80 @@ const Portfolio = () => {
     {
       id: 1,
       category: 'web',
-      image: 'https://picsum.photos/id/1/600/400',
+      image: 'ecommerce.jpg',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
       link: '#',
     },
     {
       id: 2,
       category: 'mobile',
-      image: 'https://picsum.photos/id/2/600/400',
+      image: 'fitness.jpg',
       technologies: ['React Native', 'Firebase', 'Redux', 'Health API'],
       link: '#',
     },
     {
       id: 3,
       category: 'web',
-      image: 'https://picsum.photos/id/3/600/400',
+      image: 'dashboard.jpg',
       technologies: ['Vue.js', 'D3.js', 'Express', 'PostgreSQL'],
       link: '#',
     },
     {
       id: 4,
       category: 'ui',
-      image: 'https://picsum.photos/id/4/600/400',
+      image: 'ui_ux.jpg',
       technologies: ['Figma', 'Adobe XD', 'Illustrator'],
       link: '#',
     },
     {
       id: 5,
       category: 'web',
-      image: 'https://picsum.photos/id/5/600/400',
+      image: 'inmobiliaria.jpg',
       technologies: ['React', 'Next.js', 'Tailwind CSS', 'Mapbox API'],
       link: '#',
     },
     {
       id: 6,
       category: 'mobile',
-      image: 'https://picsum.photos/id/6/600/400',
+      image: 'domis.jpg',
       technologies: ['Flutter', 'Firebase', 'Google Maps API'],
       link: '#',
     },
+    {
+      id: 7,
+      category: 'ia',
+      image: 'asistente_ia.jpg',
+      technologies: ['Inteligencia Artificial', 'LLM', 'n8n'],
+      link: '#',
+    },
+    {
+      id: 8,
+      category: 'ia',
+      image: 'rpa.jpg',
+      technologies: ['LLM', 'n8n', 'Inteligencia Artificial'],
+      link: '#',
+    },
+    {
+      id: 10,
+      category: 'web',
+      image: 'academica.jpg',
+      technologies: ['JavaScript', 'Firebase', 'Tailwind CSS'],
+      link: '#',
+    },
+    {
+      id: 11,
+      category: 'web',
+      image: 'restaurantes.jpg',
+      technologies: ['Flutter', 'Firebase', 'Google Maps API'],
+      link: '#',
+    },
+    {
+      id: 12,
+      category: 'web',
+      image: 'pasarela_pago.jpg',
+      technologies: ['Mercado Pago', 'PSE', 'Wompi', 'PayU'],
+      link: '#',
+    }
   ];
 
   // Función auxiliar para obtener el título o la descripción de un proyecto desde las traducciones
@@ -133,6 +168,14 @@ const Portfolio = () => {
           >
             {t.portfolio.categories.ui}
           </button>
+          {/* Botón "Inteligencia Artificial" */}
+          <button
+            key="ia"
+            onClick={() => setActiveCategory('ia')}
+            className={`px-6 py-2 rounded-full transition-colors duration-300 ${activeCategory === 'ia' ? 'bg-secondary text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600'}`}
+          >
+            {t.portfolio.categories.ia}
+          </button>
 
         </motion.div>
 
@@ -163,7 +206,7 @@ const Portfolio = () => {
             >
               <div className="relative overflow-hidden h-60">
                 <img
-                  src={project.image}
+                  src={`/assets/images/${project.image}`}
                   alt={getProjectTranslation(project.id, 'title')} // Usa la traducción para el alt
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                 />
